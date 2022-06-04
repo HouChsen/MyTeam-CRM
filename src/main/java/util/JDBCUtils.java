@@ -26,6 +26,8 @@ public class JDBCUtils {
             pro.load(is);
 
             //2.初始化连接池对象
+
+
             ds = DruidDataSourceFactory.createDataSource(pro);
 
         } catch (IOException e) {

@@ -21,11 +21,13 @@
 <body>
 
 
-  <div style="color: blue">${user.name},欢迎您</div>
+  <div style="color: blue;text-align:center">${user.name}   欢迎您</div>
   <div align="center">
     <a
             href="${pageContext.request.contextPath}/findUserByPageServlet" style="text-decoration:none;font-size:33px">查询所有用户信息
-    </a>
+
+    </a><br>
+
   </div>
 
 

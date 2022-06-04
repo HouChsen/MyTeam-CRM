@@ -8,6 +8,7 @@ public class User {
     private String address;
     private String qq;
     private String email;
+    private String type;
 
     private String username;
     private String password;
@@ -84,6 +85,14 @@ public class User {
         this.email = email;
     }
 
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -94,6 +103,7 @@ public class User {
                 ", address='" + address + '\'' +
                 ", qq='" + qq + '\'' +
                 ", email='" + email + '\'' +
+                ", type='" + type + '\'' +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 '}';

@@ -77,8 +77,6 @@
 
 
         }
-
-
     </script>
 </head>
 <body>
@@ -93,7 +91,7 @@
                 <input type="text" name="name" value="${condition.name[0]}" class="form-control" id="exampleInputName2" >
             </div>
             <div class="form-group">
-                <label for="exampleInputName3">籍贯</label>
+                <label for="exampleInputName3">地址</label>
                 <input type="text" name="address" value="${condition.address[0]}" class="form-control" id="exampleInputName3" >
             </div>
 
@@ -108,7 +106,7 @@
 
     <div style="float: right;margin: 5px;">
 
-        <a class="btn btn-primary" href="${pageContext.request.contextPath}/add.jsp">添加联系人</a>
+        <a class="btn btn-primary" href="${pageContext.request.contextPath}/add.jsp">添加用户</a>
         <a class="btn btn-primary" href="javascript:void(0);" id="delSelected">删除选中</a>
 
     </div>
@@ -120,7 +118,7 @@
             <th>姓名</th>
             <th>性别</th>
             <th>年龄</th>
-            <th>籍贯</th>
+            <th>地址</th>
             <th>QQ</th>
             <th>邮箱</th>
             <th>操作</th>

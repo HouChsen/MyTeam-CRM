@@ -8,7 +8,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>修改用户</title>
+        <title>修改客户</title>
 
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <script src="js/jquery-2.1.0.min.js"></script>
@@ -17,7 +17,7 @@
     </head>
     <body>
         <div class="container" style="width: 400px;">
-        <h3 style="text-align: center;">修改联系人</h3>
+        <h3 style="text-align: center;">修改客户信息</h3>
         <form action="${pageContext.request.contextPath}/updateUserServlet" method="post">
             <!--  隐藏域 提交id-->
             <input type="hidden" name="id" value="${user.id}">
@@ -48,63 +48,8 @@
           </div>
 
           <div class="form-group">
-            <label for="address">籍贯：</label>
-             <select name="address" id="address" class="form-control" >
-                 <c:if test="${user.address == '广州'}">
-                    <option value="广州" selected>广州</option>
-                    <option value="北京">北京</option>
-                    <option value="上海">上海</option>
-                     <option value="郑州">郑州</option>
-                     <option value="深圳">深圳</option>
-                     <option value="周口">周口</option>
-
-                 </c:if>
-
-                 <c:if test="${user.address == '北京'}">
-                     <option value="广州" >广州</option>
-                     <option value="北京" selected>北京</option>
-                     <option value="上海">上海</option>
-                     <option value="郑州">郑州</option>
-                     <option value="深圳">深圳</option>
-                     <option value="周口">周口</option>
-                 </c:if>
-
-                 <c:if test="${user.address == '上海'}">
-                     <option value="广州">广州</option>
-                     <option value="北京">北京</option>
-                     <option value="上海" selected>上海</option>
-                     <option value="郑州">郑州</option>
-                     <option value="深圳">深圳</option>
-                     <option value="周口">周口</option>
-                 </c:if>
-
-                 <c:if test="${user.address == '郑州'}">
-                     <option value="广州">广州</option>
-                     <option value="北京">北京</option>
-                     <option value="上海">上海</option>
-                     <option value="郑州" selected>郑州</option>
-                     <option value="深圳">深圳</option>
-                     <option value="周口">周口</option>
-                 </c:if>
-
-                 <c:if test="${user.address == '周口'}">
-                     <option value="广州">广州</option>
-                     <option value="北京">北京</option>
-                     <option value="上海">上海</option>
-                     <option value="郑州">郑州</option>
-                     <option value="深圳">深圳</option>
-                     <option value="周口" selected>周口</option>
-                 </c:if>
-
-                 <c:if test="${user.address == '深圳'}">
-                     <option value="广州">广州</option>
-                     <option value="北京">北京</option>
-                     <option value="上海">上海</option>
-                     <option value="郑州">郑州</option>
-                     <option value="深圳" selected>深圳</option>
-                     <option value="周口">周口</option>
-                 </c:if>
-            </select>
+            <label for="address">地址：</label>
+                 <input type="text" id="address"class="form-control"  value="${user.address}"name="address" placeholder="请输入地址">
           </div>
 
           <div class="form-group">

@@ -94,7 +94,7 @@ public class UserDaoImpl implements UserDao {
         System.out.println(sb.toString());
         System.out.println(params);
 
-        return template.queryForObject(sb.toString(), Integer.class, params.toArray());
+        return template.queryForObject(sb.toString(),Integer.class,params.toArray());
     }
 
     @Override
